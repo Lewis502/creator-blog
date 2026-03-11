@@ -1,0 +1,98 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="creator.blog -- Practical Guides for Solo Creators">
+  <style>
+    .hero {
+      margin-bottom: 3rem;
+    }
+    .hero h1 {
+      font-size: 2.25rem;
+      margin-bottom: 1rem;
+      letter-spacing: -0.02em;
+    }
+    .hero p {
+      font-size: 1.15rem;
+      color: var(--text-muted);
+      max-width: 600px;
+    }
+
+    .topics {
+      margin: 3rem 0;
+    }
+    .topics h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .topic-grid {
+      display: grid;
+      gap: 1.5rem;
+    }
+
+    .topic-card {
+      padding: 1.5rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+    }
+    .topic-card h3 {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+    .topic-card p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    .about-section {
+      margin: 3rem 0;
+      padding: 2rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+    }
+    .about-section h2 {
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+    }
+    .about-section p {
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+    }
+    .about-section p:last-child { margin-bottom: 0; }
+  </style>
+
+  <div class="hero">
+    <h1>Build a Content Business with AI</h1>
+    <p>Practical guides for solo creators who use AI tools, newsletters, and smart workflows to build real businesses without a team.</p>
+  </div>
+
+  <div class="topics">
+    <h2>What I Write About</h2>
+    <div class="topic-grid">
+      <div class="topic-card">
+        <h3>AI Tools for Creators</h3>
+        <p>Honest reviews and real workflows using AI writing assistants, image generators, video tools, and automation platforms. What actually saves time versus what just looks impressive in a demo.</p>
+      </div>
+
+      <div class="topic-card">
+        <h3>Newsletter and Content Growth</h3>
+        <p>How to grow an audience through newsletters, SEO, and social content. Platform comparisons, growth strategies, monetization models, and what I have learned building my own.</p>
+      </div>
+
+      <div class="topic-card">
+        <h3>Solo Creator Operations</h3>
+        <p>Running a one-person content business means wearing every hat. Tech stacks, productivity systems, automation workflows, and the business side of being a solo creator.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="about-section">
+    <h2>Why This Exists</h2>
+    <p>Most creator advice comes from people selling courses about selling courses. This is different. I write about what I actually use, what I have tested, and what works for someone building a real content business as a solo operator.</p>
+    <p>Every tool review comes from hands-on use. Every workflow has been tested in my own projects. If something does not work, I say so. If there is a free alternative that does 90% of the job, I will point you to it.</p>
+    <p>New articles are published weekly. The best way to keep up is to check back regularly -- a newsletter is coming soon.</p>
+  </div>
+</BaseLayout>
